@@ -1,0 +1,43 @@
+<script lang="ts">
+    import { invalidate } from '$app/navigation';
+    import { goto } from '$app/navigation';
+  
+    let username = '';
+    let password = '';
+    let error = '';
+  
+    async function handleLogin() {
+      const res = await fetch('/login', {
+        method: 'POST',
+        body: JSON.stringify({ username, password }),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+  
+      if (res.ok) {
+        window.location.href = '/';
+      } else {
+        error = 'Invalid username or password.';
+      }
+    }
+  </script>
+  
+  <div class="max-w-md mx-auto mt-10 space-y-6">
+    <h1 class="text-2xl font-bold text-center">Login</h1>
+  
+    {#if error}
+      <p class="text-red-600 text-center">{error}</p>
+    {/if}
+  
+    <form on:submit|preventDefault={handleLogin} class="space-y-4">
+      <input type="text" bind:value={username} placeholder="Username"
+        class="w-full px-4 py-2 border rounded" required />
+      <input type="password" bind:value={password} placeholder="Password"
+        class="w-full px-4 py-2 border rounded" required />
+      <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
+        Login
+      </button>
+    </form>
+  </div>
+  
