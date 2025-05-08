@@ -41,23 +41,37 @@
 			required
 		/>
 		<button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-			Add
+			Add to watchlist
 		</button>
 	</form>
 
 	<div class="grid md:grid-cols-3 gap-6">
 		{#each data.myCities as cityData}
-			{#if cityData.weather}
+		<div class="relative group transition duration-200 transform hover:scale-105">
+			<form method="POST" action="/my-cities/remove" class="absolute top-2 right-2 z-10">
+			  <input type="hidden" name="city" value={cityData.city} />
+				<button
+					type="submit"
+					title="Remove city"
+					class="text-red-600 hover:text-red-800 bg-white dark:bg-gray-800 rounded-full p-1 shadow 
+						transition duration-200 transform group-hover:scale-110"
+				>
+					🗑️
+				</button>
+				</form>
+
+				{#if cityData.weather}
 				<WeatherCard
 					city={cityData.weather.name}
 					temp={cityData.weather.main.temp}
 					icon={cityData.weather.weather[0].icon}
 				/>
-			{:else}
+				{:else}
 				<div class="p-4 bg-red-100 text-red-600 rounded shadow">
 					❌ Failed to load weather for {cityData.city}
 				</div>
-			{/if}
+				{/if}
+			</div>
 		{/each}
 	</div>
 {/if}
