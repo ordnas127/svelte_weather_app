@@ -1,15 +1,14 @@
 {
 	"compilerOptions": {
-	  "target": "ES2020",
-	  "module": "ESNext",
-	  "moduleResolution": "Node",
-	  "esModuleInterop": true,
+	  "verbatimModuleSyntax": true,
+	  "module": "esnext",
+	  "moduleResolution": "bundler",
+	  "target": "esnext",
+	  "lib": ["DOM", "ESNext"],
 	  "strict": true,
-	  "baseUrl": ".",
-	  "paths": {
-		"$lib": ["src/lib"],
-		"$lib/*": ["src/lib/*"],
-		"$env/*": [".svelte-kit/types/src/env/*"]
-	}
+	  "esModuleInterop": true,
+	  "skipLibCheck": true,
+	  "forceConsistentCasingInFileNames": true
 	}
   }
+  
