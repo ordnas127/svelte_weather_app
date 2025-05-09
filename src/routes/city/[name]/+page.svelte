@@ -46,18 +46,22 @@
   {#if entries.length > 0}
     {#each Array.from(grouped.entries()) as [day, dayEntries]}
       <h2 class="text-xl font-semibold mt-6 mb-2">{formatDate(day)}</h2>
-      <div class="flex overflow-x-auto gap-4 pb-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 pb-8">
         {#each dayEntries as entry}
-        <div class="w-full md:w-[280px] bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md text-center">
+          <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md text-center">
             <p class="text-sm font-semibold mb-1">{formatTime(entry.dt_txt)}</p>
             <img
               src={`https://openweathermap.org/img/wn/${entry.weather[0].icon}@2x.png`}
               alt={entry.weather[0].description}
               class="w-12 h-12 mx-auto"
             />
-            <p class="text-lg font-bold">{entry.main.temp}°C</p>
+            <p class="text-lg font-bold">{Math.round(entry.main.temp)}°C</p>
             <p class="text-sm text-gray-600 dark:text-gray-300">{entry.weather[0].main}</p>
           </div>
+        {/each}
+      
+        {#each Array(4 - dayEntries.length) as _}
+          <div class="invisible"></div>
         {/each}
       </div>
     {/each}

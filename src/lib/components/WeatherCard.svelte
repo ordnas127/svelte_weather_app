@@ -9,7 +9,7 @@
     <img src={`https://openweathermap.org/img/wn/${icon}@2x.png`} alt="Weather icon" class="w-16 h-16" />
     <div>
       <h2 class="text-xl font-semibold">{city}</h2>
-      <p class="text-gray-600 dark:text-gray-300">{temp}°C</p>
+      <p class="text-gray-600 dark:text-gray-300">{Math.round(temp)}°C</p>
     </div>
   </div>
 </a>

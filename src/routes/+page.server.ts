@@ -1,7 +1,7 @@
 import type { PageServerLoad } from './$types';
 import type { WeatherData } from '$lib/types/weather';
 
-const defaultCities = ['Los Angeles', 'New York', 'Berlin', 'London', 'Dubai', 'Tokyo'];
+const defaultCities = ['Los Angeles', 'London', 'Dubai', 'New York', 'Berlin', 'Tokyo'];
 
 export const load: PageServerLoad = async ({ fetch, cookies, locals }) => {
 	const session = locals.session;
