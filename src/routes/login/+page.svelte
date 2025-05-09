@@ -32,9 +32,9 @@
   
     <form on:submit|preventDefault={handleLogin} class="space-y-4">
       <input type="text" bind:value={username} placeholder="Username"
-        class="w-full px-4 py-2 border rounded" required />
+        class="w-full px-4 py-2 border rounded text-black bg-white" required />
       <input type="password" bind:value={password} placeholder="Password"
-        class="w-full px-4 py-2 border rounded" required />
+        class="w-full px-4 py-2 border rounded text-black bg-white" required />
       <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
         Login
       </button>

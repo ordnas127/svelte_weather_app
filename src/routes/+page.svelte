@@ -37,7 +37,7 @@
 			name="city"
 			bind:value={newCity}
 			placeholder="Add a city..."
-			class="flex-1 px-4 py-2 border rounded"
+			class="flex-1 px-4 py-2 border rounded text-black bg-white"
 			required
 		/>
 		<button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
@@ -49,7 +49,7 @@
 		{#each data.myCities as cityData}
 		<div class="relative group transition duration-200 transform hover:scale-105">
 			<form method="POST" action="/my-cities/remove" class="absolute top-2 right-2 z-10">
-			  <input type="hidden" name="city" value={cityData.city} />
+			  <input type="hidden" name="city" value={cityData.city} class="text-black bg-white" />
 				<button
 					type="submit"
 					title="Remove city"
