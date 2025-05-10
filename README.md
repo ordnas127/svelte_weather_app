@@ -9,8 +9,8 @@ Easily track weather in popular cities and manage your own custom watchlist.
 
 - 🌍 **Global Weather Overview** with smooth fade-in animations
 - 📌 **My Cities**: add/remove cities to track your own favourites
-- 🗝️ **Login**: login to manage favourites
-- 🌦️**Details Page**: selecting a city shows a more detailed 5 day forecast
+- 🗝️ **Login**: login (session cookie) to manage favourites
+- 🌦️**Details Page**: selecting a city - shows a detailed 5 day forecast
 - 🔄 Live weather data via the [OpenWeatherMap API](https://openweathermap.org/api)
 - 🌓 **Dark mode** with persistent theme (stored in cookies)
 - ✅ Responsive layout with TailwindCSS
