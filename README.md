@@ -9,6 +9,8 @@ Easily track weather in popular cities and manage your own custom watchlist.
 
 - 🌍 **Global Weather Overview** with smooth fade-in animations
 - 📌 **My Cities**: add/remove cities to track your own favourites
+- 🗝️ **Login**: login to manage favourites
+- 🌦️**Details Page**: selecting a city shows a more detailed 5 day forecast
 - 🔄 Live weather data via the [OpenWeatherMap API](https://openweathermap.org/api)
 - 🌓 **Dark mode** with persistent theme (stored in cookies)
 - ✅ Responsive layout with TailwindCSS
@@ -23,13 +25,3 @@ Easily track weather in popular cities and manage your own custom watchlist.
 - [OpenWeatherMap API](https://openweathermap.org/api)
 - Cookie-based theme storage
 - Fully client-rendered + server-side POST handling
-
----
-
-## 🧪 Local Development
-
-```bash
-git clone https://github.com/your-username/weather-app.git
-cd weather-app
-npm install
-npm run dev
