@@ -35,7 +35,7 @@
         class="w-full px-4 py-2 border rounded text-black bg-white" required />
       <input type="password" bind:value={password} placeholder="Password"
         class="w-full px-4 py-2 border rounded text-black bg-white" required />
-      <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
+      <button type="submit" class="w-full bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600">
         Login
       </button>
     </form>
