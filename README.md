@@ -1,38 +1,35 @@
-# sv
+# 🌤️ Weather.io – A SvelteKit Weather App
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A modern weather dashboard built with **SvelteKit**, TailwindCSS, and the **OpenWeatherMap API**.  
+Easily track weather in popular cities and manage your own custom watchlist.
 
-## Creating a project
+---
 
-If you're seeing this, you've probably already done this step. Congrats!
+## 🚀 Features
+
+- 🌍 **Global Weather Overview** with smooth fade-in animations
+- 📌 **My Cities**: add/remove cities to track your own favourites
+- 🔄 Live weather data via the [OpenWeatherMap API](https://openweathermap.org/api)
+- 🌓 **Dark mode** with persistent theme (stored in cookies)
+- ✅ Responsive layout with TailwindCSS
+- ✨ Smooth animations using Svelte transitions
+
+---
+
+## 🛠️ Tech Stack
+
+- [SvelteKit](https://kit.svelte.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [OpenWeatherMap API](https://openweathermap.org/api)
+- Cookie-based theme storage
+- Fully client-rendered + server-side POST handling
+
+---
+
+## 🧪 Local Development
 
 ```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
+git clone https://github.com/your-username/weather-app.git
+cd weather-app
+npm install
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
