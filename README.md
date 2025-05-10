@@ -1,6 +1,6 @@
 # 🌤️ Weather.io – A SvelteKit Weather App
 
-A modern weather dashboard built with **SvelteKit**, TailwindCSS, and the **OpenWeatherMap API**.  
+A modern weather dashboard built with **SvelteKit**, **TailwindCSS**, and the **OpenWeatherMap API**.  
 Easily track weather in popular cities and manage your own custom watchlist.
 
 ---
