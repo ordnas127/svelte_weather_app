@@ -7,7 +7,7 @@ Easily track weather in popular cities and manage your own custom watchlist.
 
 ## 🔗 Live Demo
 
-👉 [View the live app on Vercel](https://svelte-weather-app-swart.vercel.app/)
+👉 [View the live app on Vercel](https://svelte-weather-app-git-main-ordnas127s-projects.vercel.app)
 
 ---
 
