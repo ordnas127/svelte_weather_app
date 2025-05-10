@@ -1,7 +1,13 @@
-# 🌤️ Weather.io – A SvelteKit Weather App
+# 🌤️ weather.io – A SvelteKit Weather App
 
 A modern weather dashboard built with **SvelteKit**, **TailwindCSS**, and the **OpenWeatherMap API**.  
 Easily track weather in popular cities and manage your own custom watchlist.
+
+---
+
+## 🔗 Live Demo
+
+👉 [View the live app on Vercel](https://svelte-weather-app-swart.vercel.app/)
 
 ---
 
@@ -9,7 +15,7 @@ Easily track weather in popular cities and manage your own custom watchlist.
 
 - 🌍 **Global Weather Overview** with smooth fade-in animations
 - 📌 **My Cities**: add/remove cities to track your own favourites
-- 🗝️ **Login**: login (session cookie) to manage favourites
+- 🗝️ **Login**: login (session cookie) to manage favourites - admin/secret (hardcoded)
 - 🌦️**Details Page**: selecting a city - shows a detailed 5 day forecast
 - 🔄 Live weather data via the [OpenWeatherMap API](https://openweathermap.org/api)
 - 🌓 **Dark mode** with persistent theme (stored in cookies)
